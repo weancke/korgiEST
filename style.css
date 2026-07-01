@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1a1a2e; 
+    padding: 20px;
+    color: #e0e0e0;
+}
+
+nav {
+    background: #16213e; 
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e94560; 
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #0f3460; 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, button {
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    background: #1a1a2e;
+    color: #fff;
+}
+
+input:focus {
+    outline: none;
+    border-color: #e94560;
+}
+
+button {
+    background-color: #e94560; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #c73652;
+    transform: scale(1.02);
+}
+
+.link {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.link a {
+    color: #e94560;
+    text-decoration: none;
+}
+
+.error-message {
+    color: #ffcccc;
+    background: #5c1a1a;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #aa3333;
+}
+
+.card {
+    border: 1px solid #333;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background: #16213e;
+}
+
+.card h3 {
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.status-new { color: #4fc3f7; font-weight: bold; }
+.status-study { color: #ffb74d; font-weight: bold; }
+.status-done { color: #81c784; font-weight: bold; }
+
+.review-btn {
+    background-color: #4fc3f7;
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 8px 15px;
+    width: auto;
+    color: #000;
+}
+
+.review-btn:hover {
+    background-color: #29b6f6;
+}
+
+.payment-options {
+    margin: 10px 0;
+}
+
+.payment-options label {
+    margin-right: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.admin-buttons button {
+    background-color: #555;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    width: auto;
+}
+
+.admin-buttons button:first-child { background-color: #ffb74d; color: black; }
+.admin-buttons button:last-child { background-color: #81c784; color: black; }
+
+@media (max-width: 992px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 10px;
+    }
+    nav a {
+        margin: 5px 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+        font-size: 16px;
+        border-bottom: 1px solid #eee;
+    }
+    nav a:last-child {
+        border-bottom: none;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .carousel-container {
+        max-width: 100%;
+    }
+    .carousel-slide img {
+    }
+
+    .card {
+        padding: 10px;
+    }
+    
+    .admin-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .admin-buttons button {
+        width: 100%;
+        margin: 0;
+    }
+}
